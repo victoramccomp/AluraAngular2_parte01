@@ -1,6 +1,7 @@
 import { NgModule } from '@angular/core';
 import { HttpModule } from '@angular/http';
 import { BrowserModule } from '@angular/platform-browser';
+import { FormsModule } from '@angular/forms';
 import { routing } from './app.routes';
 import { AppComponent } from './app.component';
 import { ListagemComponent } from './listagem/listagem.component';
@@ -11,7 +12,8 @@ import 'rxjs/add/operator/map';
 
 @NgModule ({
     imports: [ 
-        BrowserModule, 
+        BrowserModule,
+        FormsModule, 
         FotoModule, 
         HttpModule, 
         PainelModule, 
